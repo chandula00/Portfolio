@@ -1,0 +1,166 @@
+.about {
+  background: #fff;
+  overflow: hidden;
+  min-height: 780px;
+  align-items: center; /* Full width */
+  .about_me {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    vertical-align: middle;
+    h1 {
+      font-size: 15px;
+      position: relative;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: black;
+      text-align: center;
+      padding-bottom: 2%;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        height: 0.7px; /* adjust the height of the line */
+        width: 150px; /* adjust the width of the line */
+        top: 70%;
+        background: #9a9797;
+        transform: translateX(-50%);
+      }
+
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: -30px;
+      @media (max-width: 1000px) {
+        flex-wrap: wrap;
+      }
+
+      .about_me_left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .polaroid {
+          padding-left: 25px;
+          img {
+            display: block;
+            max-width: 300px;
+          }
+          span {
+            justify-content: center;
+            background: #ffffff;
+            display: inline-block;
+            margin: 15px 0px 30px 60px;
+            padding: 15px 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            -webkit-transition: all 0.2s linear;
+            -moz-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            z-index: 0;
+            position: relative;
+            border-radius: 0.5rem;
+
+            @media (max-width: 1000px) {
+              margin-right: 70px;
+            }
+          }
+
+          .profile {
+            padding-left: 0px;
+            align-items: center;
+
+            .contact_info {
+              font-size: 17px;
+              font-style: normal;
+              font-weight: 500;
+              color: #222222;
+              display: flex;
+              grid-template-columns: repeat(2, 1fr);
+              align-items: center;
+              flex-direction: row;
+              padding: 5px;
+              img {
+                width: 35px;
+                margin-right: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .about_me_right {
+        max-width: 56.666667%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 1000px) {
+          max-width: 100%;
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+        .col_md_11 {
+          display: flex;
+          max-width: 91.666667%;
+          position: relative;
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          justify-content: center;
+          align-items: center;
+
+          .card {
+            position: relative;
+            display: flex;
+            // max-width: 600px;
+            flex-direction: column;
+            min-width: 0;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+
+            .card_header {
+              display: flex;
+              gap: 5px;
+              padding: 0.75rem 1.25rem;
+              margin-bottom: 0;
+              background-color: rgba(0, 0, 0, 0.03);
+              border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+              &:first-child {
+                border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+              }
+            }
+
+            .card_body {
+              text-align: justify !important;
+              margin-left: 1rem !important;
+              margin-right: 1rem !important;
+              flex: 1 1 auto;
+              min-height: 1px;
+              padding: 1.25rem;
+              color: #000;
+
+              .wave {
+                scale: 1.5;
+                text-shadow: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
