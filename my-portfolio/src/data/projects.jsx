@@ -1,7 +1,7 @@
 export const ProjectsData = [
   {
     title: "Bonds Beyond Breakup",
-    images: ["../../src/assets/bonds_beyond breakup.png"],
+    images: ["https://github.com/chandula00/Portfolio/blob/main/my-portfolio/src/assets/bonds_beyond%20breakup.png?raw=true"],
     startDate: "2023-10-03",
     url: "https://youtu.be/Dc7rmlX_mU4",
   },
