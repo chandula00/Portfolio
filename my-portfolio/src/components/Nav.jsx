@@ -23,18 +23,18 @@ export const Nav = () => {
   }, []);
 
   return (
-      <div className={styles.nav}>
-        {/* <p>My Portfolio</p> */}
-        <ul className={styles.links}>
-          <a href="#about-me">About Me</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#recommendations">Experience</a>
-          <a href="#footer">Contact Me</a>
-        </ul>
-        <div className="menu-btn">
-          <div className="menu-btn__burger"></div>
-        </div>
+    <nav className={styles.nav} id="nav">
+      {/* <p>My Portfolio</p> */}
+      <ul className={styles.links}>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommendations">Experience</a>
+        <a href="#footer">Contact Me</a>
+      </ul>
+      <div className="menu-btn">
+        <div className="menu-btn__burger"></div>
       </div>
+    </nav>
   );
 };

@@ -1,0 +1,79 @@
+.skills {
+  background: #1f1f1f;
+  min-height: 780px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 10%;
+  .vertical_align {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    max-width: 91.666667%;
+    .col_md {
+      .section_title {
+        font-size: 15px;
+        position: relative;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-bottom: 2%;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          height: 0.7px; /* adjust the height of the line */
+          width: 150px; /* adjust the width of the line */
+          top: 70%;
+          background: #9a9797;
+          transform: translateX(-50%);
+        }
+      }
+    }
+
+    .col_md2 {
+      .skill_icon {
+        list-style: none;
+        font-size: 180%;
+        color: white;
+        text-align: center;
+        position: relative;
+
+        .list_inline {
+          display: inline-block;
+          margin: 0.5rem;
+          span {
+            .skill_tile {
+              background-color: rgba(248, 245, 244, 0.05);
+              padding: 10px 20px 10px 20px;
+              width: 100px;
+              margin: 5px 0 5px 0;
+              border-radius: 8px;
+              text-align: center !important;
+              transition: all 0.3s ease-in-out;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+i{
+    svg{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+}
+
