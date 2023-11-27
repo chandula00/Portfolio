@@ -11,9 +11,10 @@ export const Header = () => {
           wrapper="h1"
           speed={50}
           style={{
-            fontSize: "3em",
+            fontSize: "3.5em",
             display: "inline-block",
             textAlign: "center",
+            fontWeight: 600,
           }}
         />
         <br></br>
@@ -27,7 +28,7 @@ export const Header = () => {
           wrapper="span"
           speed={50}
           style={{
-            fontSize: "2em",
+            fontSize: "2.5em",
             display: "inline-block",
             textAlign: "center",
           }}

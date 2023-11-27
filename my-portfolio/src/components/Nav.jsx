@@ -1,11 +1,9 @@
-import styles from "../styles/Nav.module.scss";
+import "../styles/Nav.scss";
 import { useEffect } from "react";
 
 export const Nav = () => {
   useEffect(() => {
     const menuItems = document.querySelectorAll(".nav li");
-    const menuBtn = document.querySelector(".menu-btn");
-    const navUl = document.querySelector(".nav ul");
 
     menuItems.forEach((item) => {
       ["mouseenter", "mouseout"].forEach((evt) => {
@@ -20,19 +18,48 @@ export const Nav = () => {
         });
       });
     });
+
+    const menuBtn = document.querySelector(".menu-btn");
+    const navUl = document.querySelector(".nav-items");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("open");
+      navUl.classList.toggle("open");
+    });
   }, []);
 
   return (
-    <nav className={styles.nav} id="nav">
+    <nav className="nav">
       {/* <p>My Portfolio</p> */}
-      <ul className={styles.links}>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#recommendations">Experience</a>
-        <a href="#footer">Contact Me</a>
+      <a href="/" className="logo"></a>
+      <ul className="nav-items">
+        <a href="#about">
+          <li>
+            About Me<span></span>
+          </li>
+        </a>
+        <a href="#skills">
+          <li>
+            Skills<span></span>
+          </li>
+        </a>
+        <a href="#projects">
+          <li>
+            Projects<span></span>
+          </li>
+        </a>
+        <a href="#recommendations">
+          <li>
+            Experience<span></span>
+          </li>
+        </a>
+        <a href="#footer">
+          <li>
+            Contact Me<span></span>
+          </li>
+        </a>
       </ul>
-      <div className="menu-btn">
+      <div className="menu-btn" id="menu">
         <div className="menu-btn__burger"></div>
       </div>
     </nav>
